@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Ilovar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <img src="https://picsum.photos/id/237/536/354" />
+        <h1 class="name" id="target"></h1>
+        <p class="subtext">Student at Vegova Ljubljana</p>
+    </div>
+
+    <div class="about-me">
+        <h1 class="name">About Me:</h1>
+        <p class="subtext">Hi, I am 18 year old teen who is currentlu senior at Vegova Ljubljana. My
+            passion for computer science dates all the way back to my childhood. I always like to help
+            anyone in need of help with computers.
+        </p>
+    </div>
+
+
+    <footer>
+        <p>Site Made By Me</p>
+    </footer>
+
+    <script>
+        let text = 'Mark Ilovar'
+        // Variable for current position
+        var curr = 0;
+
+        var Write = function write() {
+
+            // Find the target element to write to
+            var elem = document.getElementById('target');
+
+            // Append next character into the text content
+            elem.textContent = elem.textContent + text.charAt(curr);
+
+            // Update the current position
+            curr++;
+
+            // if we're not yet in the end of the string
+            // we have a little (20ms) pause before we write the next character
+            if (curr < text.length)
+                window.setTimeout(write, 200);
+        };
+
+        Write();
+    </script>
+</body>
+
+</html>
