@@ -8,14 +8,19 @@
 .heading {
     display: inline-block;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     margin: auto;
-    height: 900px;
+    height: 750px;
 }
 
 div.heading>img {
-    margin-top: 10%;
+    margin-top: 15vh;
     animation: fadeIn 3s;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: -20% 0;
+    border-radius: 50%;
 }
 
 
@@ -33,7 +38,7 @@ div.heading>* {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 40vw;
 }
 
 div.heading>p {
@@ -57,8 +62,8 @@ div.heading>h1 {
 }
 
 .about-me {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 div.about-me>h1 {
