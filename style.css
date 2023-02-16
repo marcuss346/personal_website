@@ -16,9 +16,18 @@ body {
 .heading {
     display: inline-block;
     align-items: center;
-    width: 100vw;
     margin: auto;
     height: 750px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cool-people {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 div.heading>img {
@@ -79,9 +88,30 @@ div.about-me>h1 {
 }
 
 div.about-me>p {
+    margin-top: 2vh;
     font-size: 22px;
 }
 
+div.cool-people>h1 {
+    font-size: 55px;
+}
+
+div.cool-people>p,
+a,
+li {
+    margin-top: 2vh;
+    font-size: 22px;
+    color: #639FAB;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.sourceCode {
+    text-decoration: underline;
+    color: aliceblue;
+}
 
 footer {
     margin-top: 40px;
